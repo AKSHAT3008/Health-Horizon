@@ -1,0 +1,22 @@
+document.getElementById("data").innerHTML=localStorage.getItem("txtValue");
+var first=localStorage.getItem("txtValue1");
+var second=localStorage.getItem("txtValue2");
+document.getElementById("data1").innerHTML = first +''+ second;
+document.getElementById("data3").innerHTML=localStorage.getItem("txtValue20");
+document.getElementById("data4").innerHTML=localStorage.getItem("txtValue4");
+document.getElementById("data5").innerHTML=localStorage.getItem("txtValue5");
+document.getElementById("data6").innerHTML=localStorage.getItem("txtValue6");
+document.getElementById("data7").innerHTML=localStorage.getItem("txtValue7");
+document.getElementById("data8").innerHTML=localStorage.getItem("txtValue8");
+document.getElementById("data9").innerHTML=localStorage.getItem("txtValue9");
+document.getElementById("data10").innerHTML=localStorage.getItem("txtValue10");
+document.getElementById("data11").innerHTML=localStorage.getItem("txtValue11");
+document.getElementById("data12").innerHTML=localStorage.getItem("txtValue12");
+document.getElementById("data13").innerHTML=localStorage.getItem("txtValue13");
+document.getElementById("data14").innerHTML=localStorage.getItem("txtValue14");
+document.getElementById("data15").innerHTML=localStorage.getItem("txtValue15");
+document.getElementById("data16").innerHTML=localStorage.getItem("txtValue16");
+document.getElementById("data17").innerHTML=localStorage.getItem("txtValue17");
+document.getElementById("data18").innerHTML=localStorage.getItem("txtValue18");
+document.getElementById("data19").innerHTML=localStorage.getItem("txtValue19");
+

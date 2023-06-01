@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Personalise with your Info</title>
+    <link rel="stylesheet" href="hc2.css">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet" />
+  <!----------------------------------------FONT AWESOME------------------------------------->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!----------------------------------------TAILSWIND CDN-------------------------------->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script>
+    tailwind.config = {
+      theme: {
+        screens: {
+          'sm': '320px',
+          'md': '640px',
+          // => @media (min-width: 640px) { ... }
+
+          'lg': '1024px',
+          // => @media (min-width: 1024px) { ... }
+
+          'xl': '1280px',
+          // => @media (min-width: 1280px) { ... }
+        },
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            limegreen: "#A6E8F7",
+            lightyellow: "#ECF7A6"
+          },
+          fontFamily: {
+            poppins: ["Poppins"],
+            sanchez: ["Sanchez"],
+          },
+          
+        }
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+                .content-auto {
+                content-visibility: auto;
+              }
+            }
+            @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap');
+        @tailwind base;
+        @tailwind components;
+        @tailwind utilities;
+          </style>
+</head>
+
+
+
+<body>
+    <nav class="bg-limegreen sticky top-0 w-full z-20 shadow-md">
+        <div class="h-20 mx-auto px-4 flex justify-start items-center md:justify-center">
+          <div class="flex space-x-7">
+    
+    
+            <!-- Primary Navbar items -->
+    
+            <div
+              class="hidden flex md:flex md:flex-grow flex-row justify-center space-x-12 text-base lg:space-x-20 lg:text-2xl">
+              <a href="../index.html"
+                class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300 text-lg">Home</a>
+              <a href="../Harsh Verma/events.html"
+                class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300 text-lg">More</a>
+              <a href="../Our team/index.html"
+                class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300 text-lg">More</a>
+              <a href="../Gallery/index.html"
+                class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300 text-lg">More</a>
+            </div>
+    
+          </div>
+    
+    
+          <!-- Mobile menu button -->
+          <div class="md:hidden flex items-center">
+            <button class="outline-none mobile-menu-button">
+              <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 " x-show="!showMenu" fill="none"
+                stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+          <ul class="flex flex-col space-y-5">
+            <li class="active"><a href="../index.html"
+                class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300">Home</a>
+            </li>
+            <li><a href="../Harsh Verma/events.html"
+                class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300">More</a>
+            </li>
+            <li><a href="../Our team/index.html"
+                class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300">More</a></li>
+            <li><a href="../Gallery/index.html"
+                class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300">More</a>
+            </li>
+          </ul>
+        </div>
+        <script>
+          const btn = document.querySelector("button.mobile-menu-button");
+          const menu = document.querySelector(".mobile-menu");
+    
+          btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+          });
+        </script>
+      </nav>
+    <form class="signup-form" action="/register" method="post">
+
+      <!-- form header -->
+      <div class="form-header">
+        <img src="HH5.png" alt="Avatar" class="avatar" style="width :150px">
+              
+        <h1>Sign Up</h1>
+      </div>
+    <div class="form-body">  
+      <!-- form body -->
+    
+        <!-- Firstname and Lastname -->
+        <div class="horizontal-group">
+          <div class="form-group left">
+            <label for="firstname" class="label-title">First Name *</label>
+            <input type="text" id="firstname" class="form-input" placeholder="enter your first name" required="required" />
+          </div>
+          <div class="form-group right">
+            <label for="lastname" class="label-title">Last Name *</label>
+            <input type="text" id="lastname" class="form-input" placeholder="enter your last name" />
+          </div>
+        </div>
+
+         <!-- email -->
+         <div class="form-group">
+            <label for="email" class="label-title">E-Mail Address *</label>
+            <input type="email"  id="E-Mail" class="form-input" placeholder="enter your email" required="required">
+          </div>
+
+          <div class="form-group">
+            <label for="name" class="label-title">Username *</label>
+            <input type="text"  id="name" class="form-input" placeholder="enter your username" required="required">
+          </div>
+
+          <div class="form-group">
+            <label for="password" class="label-title">Password *</label>
+            <input type="password"  id="password" class="form-input" placeholder="password" required="required">
+          </div>
+          
+          <!-- DOB -->
+        <div class="form-group">
+          <label for="dob" class="label-title">Date of Birth *</label>
+          <input type="date"  id="age" class="form-input" placeholder="enter your age" required="required">
+        </div>
+
+
+<!-- Gender and Caste -->
+<div class="horizontal-group">
+    <div class="form-group left">
+      <label class="label-title">Gender</label>
+      <div class="input-group">
+        <label for="male"><input type="radio" name="gender" value="male" id="male"> Male</label>
+        <label for="female"><input type="radio" name="gender" value="female" id="female"> Female</label>
+        <label for="female"><input type="radio" name="gender" value="Others" id="Others"> Others</label>
+      </div>
+    </div>
+  </div>
+
+        <!-- Nantionality and State-->
+        <div class="horizontal-group">
+          <div class="form-group left">
+            <label class="label-title">Nationality</label>
+            <select class="form-input" id="Nation" >
+              <option value="I">Indian</option>
+              <option value="NI">Non-Indian</option>
+            </select>
+          </div>
+        </div> 
+        </div>
+
+      <!-- form-footer -->
+      <br>
+       
+
+
+
+
+       
+      <!-- form-footer -->
+      
+        <span>* required</span>
+        <br>
+        
+        
+        <button type="submit" class="btn" id="submit" ><a href="hc1.html">
+         
+        Proceed</a></button>
+
+    </form>
+    <!-- Script for range input label -->
+    <script>
+      var rangeLabel = document.getElementById("range-label");
+      var experience = document.getElementById("experience");
+
+      function change() {
+      rangeLabel.innerText = experience.value + "K";
+      }
+    </script>
+
+  </body>
+  <footer class="ct-footer">
+    <div class="container">
+      <form name="contentForm" enctype="multipart/form-data" method="post" action="">
+        <div class="ct-footer-pre text-center-lg">
+          <div class="inner">
+            <span>Join WebCorpCo to receive updates, news & events!</span>
+          </div>
+          <div class="inner">
+            <div class="form-group">
+              <input name="formfields[nl_email]" id="nl_email" class="validate[required]" placeholder="Enter your email address" type="text" value=""> <label for="nl_email" class="sr-only">Email Address</label> <button type="submit" class="btn btn-motive">Join</button>
+            </div>
+          </div>
+        </div>
+      </form>
+      <ul class="ct-footer-list text-center-sm">
+        <li>
+          <h2 class="ct-footer-list-head">Learn More</h2>
+          <ul>
+            <li>
+              <a href="">Company</a>
+            </li>
+            <li>
+              <a href="">Clients</a>
+            </li>
+            <li>
+              <a href="">News</a>
+            </li>
+            <li>
+              <a href="">Careers</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h2 class="ct-footer-list-head">Services</h2>
+          <ul>
+            <li>
+              <a href="">Design</a>
+            </li>
+            <li>
+              <a href="">Marketing</a>
+            </li>
+            <li>
+              <a href="">Sales</a>
+            </li>
+            <li>
+              <a href="">Programming</a>
+            </li>
+            <li>
+              <a href="">Support</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h2 class="ct-footer-list-head">The Industry</h2>
+          <ul>
+            <li>
+              <a href="">Thought Leadership</a>
+            </li>
+            <li>
+              <a href="">Webinars</a>
+            </li>
+            <li>
+              <a href="">Events</a>
+            </li>
+            <li>
+              <a href="">Sponsorships</a>
+            </li>
+            <li>
+              <a href="">Advisors</a>
+            </li>
+            <li>
+              <a href="">Training Program</a>
+            </li>
+            <li>
+              <a href="">Activities & Campaigns</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h2 class="ct-footer-list-head">Public Relations</h2>
+          <ul>
+            <li>
+              <a href="">WebCorpCo Blog</a>
+            </li>
+            <li>
+              <a href="">Hackathons</a>
+            </li>
+            <li>
+              <a href="">Videos</a>
+            </li>
+            <li>
+              <a href="">News Releases</a>
+            </li>
+            <li>
+              <a href="">Newsletters</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h2 class="ct-footer-list-head">About</h2>
+          <ul>
+            <li>
+              <a href="">FAQ</a>
+            </li>
+            <li>
+              <a href="">Our Board</a>
+            </li>
+            <li>
+              <a href="">Our Staff</a>
+            </li>
+            <li>
+              <a href="">Contact Us</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div class="ct-footer-meta text-center-sm">
+        <div class="row">
+          <div class="col-sm-6 col-md-2">
+            <img alt="logo" src="https://www.solodev.com/assets/footer/logo.png">
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <address>
+              <span>WebCorpCo<br></span>123 Easy Street<br>
+              Orlando, Florida, 32801<br>
+              <span>Phone: <a href="tel:5555555555">(555) 555-8899</a></span>
+            </address>
+          </div>
+          <div class="col-sm-6 col-md-2 ct-u-paddingTop10">
+            <a href="" target="_blank"><img alt="app store" src="https://www.solodev.com/assets/footer/appstore.png"></a>
+          </div>
+          <div class="col-sm-6 col-md-2 ct-u-paddingTop10">
+            <a href="" target="_blank"><img alt="google play store" src="https://www.solodev.com/assets/footer/androidstore.png"></a>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <ul class="ct-socials list-unstyled list-inline">
+              <li>
+                <a href="" target="_blank"><img alt="facebook" src="https://www.solodev.com/assets/footer/facebook-white.png"></a>
+              </li>
+              <li>
+                <a href="" target="_blank"><img alt="twitter" src="https://www.solodev.com/assets/footer/twitter-white.png"></a>
+              </li>
+              <li>
+                <a href="" target="_blank"><img alt="youtube" src="https://www.solodev.com/assets/footer/youtube-white.png"></a>
+              </li>
+              <li>
+                <a href="" target="_blank"><img alt="instagram" src="https://www.solodev.com/assets/footer/instagram-white.png"></a>
+              </li>
+              <li>
+                <a href="" target="_blank"><img alt="pinterest" src="https://www.solodev.com/assets/footer/pinterest-white.png"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ct-footer-post">
+      <div class="container">
+        <div class="inner-left">
+          <ul>
+            <li>
+              <a href="">FAQ</a>
+            </li>
+            <li>
+              <a href="">News</a>
+            </li>
+            <li>
+              <a href="">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  </footer>
+</html>

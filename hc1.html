@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="hc1.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet" />
+  <!----------------------------------------FONT AWESOME------------------------------------->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!----------------------------------------TAILSWIND CDN-------------------------------->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!------------------------------------------INDEX JS------------------------------------>
+  
+  <!-------------------------------------------STYLESHEET CSS----------------------------->
+  <link rel="stylesheet" href="hc1.css">
+  
+  <!--------------------------------------TAILSWIND SCRIPT------------------------------->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script>
+    tailwind.config = {
+      theme: {
+        screens: {
+          'sm': '320px',
+          'md': '640px',
+          // => @media (min-width: 640px) { ... }
+
+          'lg': '1024px',
+          // => @media (min-width: 1024px) { ... }
+
+          'xl': '1280px',
+          // => @media (min-width: 1280px) { ... }
+        },
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            limegreen: "#A6E8F7",
+            lightyellow: "#ECF7A6"
+          },
+          fontFamily: {
+            poppins: ["Poppins"],
+            sanchez: ["Sanchez"],
+          },
+          
+        }
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+                .content-auto {
+                content-visibility: auto;
+              }
+            }
+            @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap');
+        @tailwind base;
+        @tailwind components;
+        @tailwind utilities;
+          </style>
+</head>
+
+
+
+<body>
+    <nav class="bg-limegreen sticky top-0 w-full z-20 shadow-md">
+        <div class="h-20 mx-auto px-4 flex justify-start items-center md:justify-center">
+          <div class="flex space-x-7">
+    
+    
+            <!-- Primary Navbar items -->
+    
+            <div
+              class="hidden flex md:flex md:flex-grow flex-row justify-center space-x-12 text-base lg:space-x-20 lg:text-2xl">
+              <a href="../index.html"
+                class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300 text-lg">Home</a>
+              <a href=""
+                class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300 text-lg">More</a>
+              <a href="../Our team/index.html"
+                class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300 text-lg">More</a>
+              <a href="../Gallery/index.html"
+                class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300 text-lg">More</a>
+            </div>
+    
+          </div>
+    
+    
+          <!-- Mobile menu button -->
+          <div class="md:hidden flex items-center">
+            <button class="outline-none mobile-menu-button">
+              <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 " x-show="!showMenu" fill="none"
+                stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+          <ul class="flex flex-col space-y-5">
+            <li class="active"><a href="../index.html"
+                class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300">Home</a>
+            </li>
+            <li><a href="../Harsh Verma/events.html"
+                class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300">More</a>
+            </li>
+            <li><a href="../Our team/index.html"
+                class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300">More</a></li>
+            <li><a href="../Gallery/index.html"
+                class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300">More</a>
+            </li>
+          </ul>
+        </div>
+        <script>
+          const btn = document.querySelector("button.mobile-menu-button");
+          const menu = document.querySelector(".mobile-menu");
+    
+          btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+          });
+        </script>
+      </nav>
+    <div class="box">
+
+
+        <form action="#">
+            <div class="imgcontainer">
+                <img src="HH5.png" alt="Avatar" class="avatar" style="width :150px">
+              </div>
+            <div class="row">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Email or Phone" required>
+            </div>
+            <div class="row">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Password" required>
+            </div>
+            <div class="pass"><a href="#">Forgot password?</a></div>
+            <div class="row button">
+              <button type="submit" class="btn" id="submit" ><a href="hc2.html">
+         
+                Login</a></button>
+            </div>
+            <div class="signup-link">Not a member? <a href="hc2.html">Signup now</a></div>
+        </form>
+
+
+        <div class="figure"></div>
+
+
+    </div>
+
+
+</body>
+
+
+
+
+
+</html>

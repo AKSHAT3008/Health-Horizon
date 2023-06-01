@@ -1,0 +1,169 @@
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	background-image: url('HH3.png');
+    
+	
+}
+.box {
+	width: 600px;
+	height: 400px;
+	background-image: url('HH7.jpg');
+
+	position: absolute;
+    border-radius: 7px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    border-style: groove;
+    border-color: black;
+    
+	
+}
+.about {
+    padding: 50px;
+    color:black;
+    text-align: center;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+
+}
+.figure {
+    width: 100%;
+    height:100%
+}
+.figure:before {
+	content: "";
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	top: 0;
+    left:0;
+	background: url(HH4.png);
+    transform-origin: bottom;
+    transition: 1s;
+}
+.box:hover .figure:before{
+    transform: rotateX(90deg) translateY(50%);
+}
+.figure:after {
+	content: "";
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	top: 0;
+    right:0;
+	background: url(HH4.png);
+    transform-origin: top;
+    transition: 1s;
+    background-position: 300px;
+}
+.box:hover .figure:after{
+    transform: rotateX(90deg) translateY(-50%);
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+.box form{
+    padding: 30px 25px 25px 25px;
+  }
+  .box form .row{
+    height: 45px;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  .box form .row input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 60px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  form .row input:focus{
+    border-color: #070707;
+    box-shadow: inset 0px 0px 2px 2px rgba(26,188,156,0.25);
+  }
+  form .row input::placeholder{
+    color: #999;
+  }
+  .box form .row i{
+    position: absolute;
+    width: 47px;
+    height: 100%;
+    color: #fff;
+    font-size: 18px;
+    background: #080808;
+    border: 1px solid #020202;
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .box form .pass{
+    margin: -8px 0 20px 0;
+  }
+  .box form .pass a{
+    color: #070707;
+    font-size: 17px;
+    text-decoration: none;
+    text-shadow: 0 0 3px #020202;
+  }
+  .box form .pass a:hover{
+    text-decoration: underline;
+  }
+  .box form .button input{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding:10px 20px 15px 20px;
+    background: #020202;
+    border: 1px solid #050505;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  form .button input:hover{
+    background: #121cd8;
+  }
+  .box form .signup-link{
+    text-align: center;
+    margin-top: 3px;
+    font-size: 15px;
+  }
+  .box form .signup-link a{
+    color: #4677f2;
+    text-decoration: none;
+    text-shadow: 0 0 1px #020202;
+  }
+  form .signup-link a:hover{
+    text-decoration: underline;
+  }
+form {
+    display:grid;
+    place-items: center;
+    height:100%;
+}
+.imgcontainer 
+{
+  text-align: center;
+  margin: 0px 0 0px 0;
+  
+}
+
+img.avatar 
+{
+  width: 30%;
+  height: 30%;
+  
+  
+  border-radius: 10%;
+  
+}
